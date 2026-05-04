@@ -44,6 +44,10 @@ if (process.env.NODE_ENV === "development") {
 
 // https://astro.build/config
 export default defineConfig({
+	server: {
+		port: 3000,     // 默认开发端口改成 3000
+		host: true      // 允许手机/局域网访问
+	  },
 	site: siteConfig.site_url,
 	
 	base: "/",
